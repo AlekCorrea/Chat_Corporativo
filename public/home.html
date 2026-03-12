@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Painel</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="home-container">
+
+<img src="logo.png" class="home-logo">
+
+<h1>Bem-vindo</h1>
+
+<p id="usuarioLogado"></p>
+
+<div class="home-buttons">
+
+<button onclick="entrarChat()">Entrar no Chat</button>
+
+<button onclick="logout()">Sair</button>
+
+</div>
+
+</div>
+
+<script>
+
+const usuario = localStorage.getItem("usuario");
+
+document.getElementById("usuarioLogado").innerText =
+"Usuário logado: " + usuario;
+
+function entrarChat(){
+
+window.location.href="index.html";
+
+}
+
+function logout(){
+
+localStorage.removeItem("usuario");
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+</body>
+</html>

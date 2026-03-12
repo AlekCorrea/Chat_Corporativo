@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<div class="login-card">
+
+<h1>Login</h1>
+
+<input id="usuario" placeholder="Usuário">
+
+<input id="senha" type="password" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+
+<p>
+Não tem conta?
+<a href="register.html">Criar conta</a>
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+async function login(){
+
+const usuario = document.getElementById("usuario").value;
+const senha = document.getElementById("senha").value;
+
+const res = await fetch("/api/login",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({usuario,senha})
+
+});
+
+if(res.ok){
+
+const data = await res.json();
+
+localStorage.setItem("usuario",data.usuario);
+
+window.location.href="home.html";
+
+}else{
+
+alert("Login inválido");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

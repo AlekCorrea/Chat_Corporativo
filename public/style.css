@@ -1,0 +1,368 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* FUNDO GERAL */
+
+body{
+height:100vh;
+background: linear-gradient(135deg,#555,#111);
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:15px;
+}
+
+.logo img{
+width:70px;
+filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));
+transition:0.3s;
+}
+
+.logo img:hover{
+transform:scale(1.05);
+}
+
+
+/* ================= LOGIN / REGISTER ================= */
+
+.login-container{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+}
+
+.login-card{
+background:white;
+color:black;
+padding:40px;
+border-radius:20px;
+box-shadow:0 25px 60px rgba(0,0,0,0.6);
+width:350px;
+text-align:center;
+}
+
+.login-card h1{
+margin-bottom:25px;
+}
+
+.login-card input{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #ccc;
+margin-bottom:15px;
+}
+
+.login-card button{
+background:#111;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-card button:hover{
+background:#333;
+}
+
+.register-link{
+margin-top:15px;
+font-size:14px;
+}
+
+#erro{
+color:red;
+margin-top:10px;
+}
+
+
+/* ================= CONTAINER DO CHAT ================= */
+
+.container{
+width:750px;
+text-align:center;
+}
+
+.container h1{
+margin-bottom:5px;
+}
+
+
+/* ================= TOPO ================= */
+
+.top-bar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:100%;
+margin-bottom:10px;
+}
+
+.top-left{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-top{
+width:40px;
+}
+
+.top-center{
+font-size:14px;
+opacity:0.9;
+}
+
+.top-right{
+display:flex;
+align-items:center;
+}
+
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+padding:8px 15px;
+border:none;
+border-radius:8px;
+background:#111;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn-voltar:hover{
+background:#333;
+}
+
+
+/* ================= STATUS ================= */
+
+#status-bar{
+text-align:center;
+margin-bottom:15px;
+font-size:14px;
+opacity:0.9;
+}
+
+
+/* ================= CARD DO CHAT ================= */
+
+.chat-card{
+background:white;
+border-radius:20px;
+padding:20px;
+box-shadow:0 20px 50px rgba(0,0,0,0.7);
+display:flex;
+flex-direction:column;
+}
+
+
+/* ================= MENSAGENS ================= */
+
+#mensagens{
+height:350px;
+overflow-y:auto;
+background:#f3f3f3;
+border-radius:15px;
+padding:15px;
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-bottom:15px;
+}
+
+
+/* MENSAGEM MINHA */
+
+.minha{
+background:#4a90e2;
+color:white;
+padding:10px 15px;
+border-radius:15px;
+margin-left:auto;
+max-width:70%;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/* MENSAGEM OUTRO */
+
+.outro{
+background:#bfbfbf;
+color:#222;
+padding:10px 15px;
+border-radius:15px;
+margin-right:auto;
+max-width:70%;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/* ================= AREA DE ENVIO ================= */
+
+.envio{
+display:flex;
+gap:10px;
+}
+
+.envio input{
+flex:1;
+padding:12px;
+border-radius:12px;
+border:1px solid #ccc;
+}
+
+.envio button{
+padding:12px 20px;
+border-radius:12px;
+border:none;
+background:#111;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.envio button:hover{
+background:#333;
+}
+
+
+/* ================= MENU ================= */
+
+.menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+.menu button{
+padding:12px;
+border:none;
+border-radius:10px;
+background:#111;
+color:white;
+cursor:pointer;
+font-size:15px;
+transition:0.3s;
+}
+
+.menu button:hover{
+background:#333;
+}
+
+/* ================= HOME ================= */
+
+.home-container{
+
+text-align:center;
+
+width:400px;
+
+}
+
+.home-logo{
+
+width:70px;
+
+margin-bottom:15px;
+
+filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));
+
+}
+
+.home-container h1{
+
+margin-bottom:10px;
+
+}
+
+.home-container p{
+
+margin-bottom:30px;
+
+opacity:0.8;
+
+}
+
+.home-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.home-buttons button{
+
+padding:14px;
+
+border:none;
+
+border-radius:10px;
+
+background:#111;
+
+color:white;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.home-buttons button:hover{
+
+background:#333;
+
+}
+.minha{
+
+background:#4a90e2;
+color:white;
+padding:10px 15px;
+border-radius:15px;
+margin-left:auto;
+max-width:70%;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+font-size:14px;
+
+}
+
+.outro{
+
+background:#e0e0e0;
+color:#222;
+padding:10px 15px;
+border-radius:15px;
+margin-right:auto;
+max-width:70%;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+font-size:14px;
+
+}
